@@ -1,1 +1,11 @@
-hi
+extends layout
+
+block content
+	.center
+		h1 move the hand
+
+		- for (var i = 1; i < 6; i++) 
+			button(type="submit")
+				| #{i}
+		p
+		img(src="http://www.epianostudio.com/wp-content/uploads/2008/10/fingering.jpg")
