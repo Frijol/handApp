@@ -64,3 +64,25 @@ function flexPinky() {
   servos.move(pinkyFront, 0);
   servos.move(pinkyBack, 1);
 }
+
+// Poses
+function spread() {
+  flexThumb();
+  flexIndex();
+  flexMiddle();
+  flexRing();
+  flexPinky();
+}
+
+function fist() {
+  bendThumb();
+  bendIndex();
+  bendMiddle();
+  bendRing();
+  bendPinky();
+}
+
+function point() {
+  fist();
+  flexIndex();
+}
